@@ -1,180 +1,54 @@
-<!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PedroVictor</title>
-    
-    <!-- Importando o Tailwind CSS para um design moderno e ágil -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Importando a fonte personalizada 'Chakra Petch' do Google Fonts -->
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-
-    <style>
-        /* Aplicando a fonte Chakra Petch e estilizando elementos globais */
-        body {
-            font-family: 'Chakra Petch', sans-serif;
-        }
-        /* Efeito de scrollbar moderno e sutil */
-        ::-webkit-scrollbar {
-            width: 8px;
-            height: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #09090b;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #ef4444;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #dc2626;
-        }
-    </style>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <title>Guiminamflix</title>
 </head>
-<body class="bg-zinc-950 text-zinc-100 min-h-screen flex flex-col justify-between selection:bg-red-600 selection:text-white overflow-x-hidden">
 
-    <!-- Cabeçalho Principal (Navegação Estilo Netflix) -->
-    <nav class="sticky top-0 z-50 bg-zinc-950/95 backdrop-blur-md border-b border-zinc-900 px-6 py-4">
-        <div class="max-w-7xl mx-auto flex items-center justify-between">
-            <!-- Logo PEDROflix -->
-            <a href="#" class="text-2xl md:text-3xl font-extrabold tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-red-600 via-purple-600 to-blue-500 hover:opacity-90 transition">
-                PEDROFLIX
-            </a>
-            
-            <!-- Menu de Filtros Rápidos (Mock) -->
-            <div class="hidden md:flex items-center gap-6 text-sm font-semibold tracking-wide text-zinc-400">
-                <a href="#" class="text-zinc-100 border-b-2 border-red-600 pb-1">Início</a>
-                <a href="#" class="hover:text-zinc-100 transition">Séries</a>
-                <a href="#" class="hover:text-zinc-100 transition">Filmes</a>
-                <a href="#" class="hover:text-zinc-100 transition">Bombando</a>
-                <a href="#" class="hover:text-zinc-100 transition">Minha lista</a>
-            </div>
+<body>
+    <header>GUIMINAMFLIX</header>
 
-            <!-- Botão de Login / Perfil -->
-            <div class="flex items-center gap-4">
-                <button class="text-zinc-400 hover:text-zinc-100 transition hidden sm:inline-block">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.637 10.637Z" />
-                    </svg>
-                </button>
-                <div class="w-8 h-8 rounded-md bg-red-600 flex items-center justify-center font-bold text-sm text-white shadow-md shadow-red-600/30">
-                    G
-                </div>
-            </div>
+    <section class="chamada">
+        <div class="chamada-texto">
+            <h1>ATRAVÉS DO ARANHAVERSO</h1>
+            <p>#homem-aranha</p>
         </div>
-    </nav>
 
-    <!-- Seção Destaque (Chamada) -->
-    <main class="flex-grow max-w-7xl mx-auto px-6 py-8 md:py-16 w-full">
-        
-        <section class="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-center mb-16">
-            <!-- Informações do Destaque -->
-            <div class="lg:col-span-5 flex flex-col justify-center space-y-4">
-                <span class="inline-flex items-center px-3 py-1 rounded-full bg-red-600/10 border border-red-500/30 text-red-500 text-xs font-bold uppercase tracking-widest w-fit">
-                    🔥 Em Destaque
-                </span>
-                
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-white leading-tight uppercase">
-                    Através do <br>
-                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-500 via-purple-500 to-blue-500">Aranhaverso</span>
-                </h1>
-                
-                <div class="flex items-center gap-3 text-sm font-semibold text-zinc-400">
-                    <span class="text-green-500">98% Relevante</span>
-                    <span>2023</span>
-                    <span class="border border-zinc-700 px-1.5 py-0.5 rounded text-xs">A-12</span>
-                </div>
-                
-                <p class="text-zinc-400 text-base md:text-lg font-light leading-relaxed">
-                    Depois de se reunir com Gwen Stacy, o Amigão da Vizinhança do Brooklyn, Miles Morales, é catapultado através do Multiverso, onde ele encontra uma equipe de Pessoas-Aranha encarregadas de proteger sua própria existência.
-                </p>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gt_fAE1Eg2Q?si=EEv-tsY_b1B2OwKE"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
 
-                <div class="flex items-center gap-2 text-red-500 font-bold tracking-wide text-sm">
-                    <span class="bg-red-600 text-white px-2 py-0.5 rounded text-xs font-black mr-1">TAG</span>
-                    #homem-aranha
-                </div>
-            </div>
+    <section class="categoria">
+        <h2>Filmes e séries</h2>
+        <div class="categoria-videos">
+            <a href="https://www.youtube.com/watch?v=cs15QqG6Gjc">
+                <img src="https://img.youtube.com/vi/cs15QqG6Gjc/maxresdefault.jpg" />
+            </a>
+            <a href="https://www.youtube.com/watch?v=nCmIwcycUJ8">
+                <img src="https://img.youtube.com/vi/nCmIwcycUJ8/maxresdefault.jpg" />
+            </a>
+            <a href="https://www.youtube.com/watch?v=FvRmEapoHRc">
+                <img src="https://img.youtube.com/vi/FvRmEapoHRc/maxresdefault.jpg" />
+            </a>
+            <a href="https://www.youtube.com/watch?v=Ipkw_hWW-Hw">
+                <img src="https://img.youtube.com/vi/Ipkw_hWW-Hw/maxresdefault.jpg" />
+            </a>
+            <a href="https://www.youtube.com/watch?v=d4DzMNGoyis">
+                <img src="https://img.youtube.com/vi/d4DzMNGoyis/maxresdefault.jpg" />
+            </a>
+        </div>
+    </section>
 
-            <!-- Player do YouTube Responsivo e Premium -->
-            <div class="lg:col-span-7 flex justify-center w-full">
-                <div class="relative w-full aspect-video rounded-2xl overflow-hidden shadow-2xl shadow-red-950/20 border border-zinc-800 bg-zinc-900 group">
-                    <!-- Glow de fundo para dar aspecto moderno -->
-                    <div class="absolute -inset-1 bg-gradient-to-r from-red-600 to-blue-600 rounded-2xl blur opacity-15 group-hover:opacity-25 transition duration-1000"></div>
-                    
-                    <iframe class="relative w-full h-full rounded-2xl" 
-                            src="https://www.youtube.com/embed/gt_fAE1Eg2Q?si=EEv-tsY_b1B2OwKE"
-                            title="YouTube video player" 
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" 
-                            allowfullscreen>
-                    </iframe>
-                </div>
-            </div>
-        </section>
+</body>
 
-        <!-- Seção de Categorias de Vídeos -->
-        <section class="space-y-6">
-            <div class="flex items-center justify-between border-b border-zinc-900 pb-4">
-                <h2 class="text-xl md:text-2xl font-bold tracking-wider text-white uppercase flex items-center gap-2">
-                    <span class="w-1.5 h-6 bg-red-600 rounded-full"></span>
-                    Filmes e séries sugeridos
-                </h2>
-                <span class="text-xs md:text-sm font-semibold text-red-500 hover:text-red-400 cursor-pointer transition">Ver tudo →</span>
-            </div>
+</html>
 
-            <!-- Grid Responsiva com efeito de card premium (Hover estilo Netflix) -->
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6">
-                
-                <!-- Card 1 -->
-                <a href="https://www.youtube.com/watch?v=cs15QqG6Gjc" target="_blank" class="group relative block rounded-xl overflow-hidden bg-zinc-900 border border-zinc-800 hover:border-red-500/50 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-red-600/10">
-                    <img class="w-full aspect-video object-cover" src="https://img.youtube.com/vi/cs15QqG6Gjc/maxresdefault.jpg" alt="Video thumbnail" />
-                    <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-end p-3">
-                        <span class="text-xs font-bold text-white tracking-wide uppercase flex items-center gap-1.5">
-                            <svg class="w-4 h-4 text-red-500 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                            Assistir Trailer
-                        </span>
-                    </div>
-                </a>
-
-                <!-- Card 2 -->
-                <a href="https://www.youtube.com/watch?v=nCmIwcycUJ8" target="_blank" class="group relative block rounded-xl overflow-hidden bg-zinc-900 border border-zinc-800 hover:border-purple-500/50 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-600/10">
-                    <img class="w-full aspect-video object-cover" src="https://img.youtube.com/vi/nCmIwcycUJ8/maxresdefault.jpg" alt="Video thumbnail" />
-                    <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-end p-3">
-                        <span class="text-xs font-bold text-white tracking-wide uppercase flex items-center gap-1.5">
-                            <svg class="w-4 h-4 text-purple-500 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                            Assistir Trailer
-                        </span>
-                    </div>
-                </a>
-
-                <!-- Card 3 -->
-                <a href="https://www.youtube.com/watch?v=FvRmEapoHRc" target="_blank" class="group relative block rounded-xl overflow-hidden bg-zinc-900 border border-zinc-800 hover:border-blue-500/50 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-600/10">
-                    <img class="w-full aspect-video object-cover" src="https://img.youtube.com/vi/FvRmEapoHRc/maxresdefault.jpg" alt="Video thumbnail" />
-                    <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-end p-3">
-                        <span class="text-xs font-bold text-white tracking-wide uppercase flex items-center gap-1.5">
-                            <svg class="w-4 h-4 text-blue-500 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                            Assistir Trailer
-                        </span>
-                    </div>
-                </a>
-
-                <!-- Card 4 -->
-                <a href="https://www.youtube.com/watch?v=Ipkw_hWW-Hw" target="_blank" class="group relative block rounded-xl overflow-hidden bg-zinc-900 border border-zinc-800 hover:border-red-500/50 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-red-600/10">
-                    <img class="w-full aspect-video object-cover" src="https://img.youtube.com/vi/Ipkw_hWW-Hw/maxresdefault.jpg" alt="Video thumbnail" />
-                    <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-end p-3">
-                        <span class="text-xs font-bold text-white tracking-wide uppercase flex items-center gap-1.5">
-                            <svg class="w-4 h-4 text-red-500 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                            Assistir Trailer
-                        </span>
-                    </div>
-                </a>
-
-                <!-- Card 5 -->
-                <a href="https://www.youtube.com/watch?v=d4DzMNGoyis" target="_blank" class="group relative block rounded-xl overflow-hidden bg-zinc-900 border border-zinc-800 hover:border-yellow-500/50 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-yellow-600/10">
-                    <img class="w-full aspect-video object-cover" src="https://img.youtube.com/vi/d4DzMNGoyis/maxresdefault.jpg" alt="Video thumbnail" />
-                    <div class="absolute inset-0 bg-gradient-to-t from-zinc
